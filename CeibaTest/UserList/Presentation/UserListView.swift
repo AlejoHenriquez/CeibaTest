@@ -25,13 +25,13 @@ class UserListView: UIViewController  {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.collectionViewLayout = collectionLayout
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Buscar Usuarios"
         navigationItem.searchController = searchController
         
-        collectionView.collectionViewLayout = collectionLayout
         UserListRouter.createUserListModule(userListRef: self)
         presenter!.didLoad()
     }
@@ -73,13 +73,17 @@ extension UserListView: UICollectionViewDelegate, UICollectionViewDataSource, UI
         let user = users[indexPath.row]
         
         cell.name.text = user.name
-        cell.phone.text = user.phone
-        cell.email.text = user.email
+        cell.phone.text = "📞 \(user.phone)"
+        cell.email.text = "✉️ \(user.email)"
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width - 20, height: 130)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        presenter?.didSelect(user: users[indexPath.row], from: self)
     }
 }
 

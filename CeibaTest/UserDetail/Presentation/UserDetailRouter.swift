@@ -10,13 +10,14 @@ import Foundation
 class UserDetailRouter: IUserDetailRouter{
     
     
-    class func createUserDetailModule(UserDetailRef: UserDetailView){
+    class func createUserDetailModule(with userDetailRef: UserDetailView, user: User){
         let presenter: IUserDetailPresenter & IUserDetailInteractorOutput = UserDetailPresenter()
         
-        UserDetailRef.presenter = presenter
-        UserDetailRef.presenter?.interactor = UserDetailInteractor()
-        UserDetailRef.presenter?.interactor?.presenter = presenter
-        UserDetailRef.presenter?.router = UserDetailRouter()
-        UserDetailRef.presenter?.view = UserDetailRef
+        userDetailRef.presenter = presenter
+        userDetailRef.presenter?.interactor = UserDetailInteractor()
+        userDetailRef.presenter?.interactor?.presenter = presenter
+        userDetailRef.presenter?.interactor?.user = user
+        userDetailRef.presenter?.router = UserDetailRouter()
+        userDetailRef.presenter?.view = userDetailRef
     }
 }

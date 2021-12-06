@@ -14,11 +14,17 @@ class UserDetailPresenter: IUserDetailPresenter{
     weak var view: IUserDetailView?
     
     func didLoad() {
-        
+        view?.showSpinner()
+        interactor?.getPosts()
+        view?.showUser(user: interactor!.getUser())
     }
 }
 
 
 extension UserDetailPresenter: IUserDetailInteractorOutput{
-    
+    func didFetchPosts(posts: [Post]){
+        print(posts)
+        view?.hideSpinner()
+        view?.showPosts(posts: posts)
+    }
 }

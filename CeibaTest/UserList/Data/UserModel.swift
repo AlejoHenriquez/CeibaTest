@@ -9,12 +9,12 @@ import Foundation
 
 struct UserModel: Codable{
     //let address: AddressModel?
-    let email: String?
-    let id: Int?
-    let name: String?
-    let phone: String?
-    let username: String?
-    let website: String?
+    let email: String
+    let id: Int
+    let name: String
+    let phone: String
+    let username: String
+    let website: String
     
     func getUser() -> User{
         return User(email: email, id: id, name: name, phone: phone, username: username, website: website)

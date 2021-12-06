@@ -17,18 +17,26 @@ protocol IUserDetailPresenter{
 }
 
 protocol IUserDetailView: AnyObject{
-
+    func showSpinner()
+    func hideSpinner()
+    
+    func showPosts(posts: [Post])
+    func showUser(user: User)
 }
 
 protocol IUserDetailInteractor{
     var presenter: IUserDetailInteractorOutput? {get set}
+    var user: User? {get set}
+    
+    func getPosts()
+    func getUser() -> User
 }
 
 protocol IUserDetailInteractorOutput: AnyObject{
-    
+    func didFetchPosts(posts: [Post])
 }
 
 protocol IUserDetailRouter{
-    static func createUserDetailModule(UserDetailRef: UserDetailView)
+    static func createUserDetailModule(with userDetailRef: UserDetailView, user: User)
 }
 

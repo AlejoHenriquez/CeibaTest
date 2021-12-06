@@ -8,5 +8,5 @@
 import Foundation
 
 protocol IUserDetailDataSource{
-    func getUsers(handler: @escaping ([UserModel]) -> Void)
+    func getPosts(withUserID id: Int, completion: @escaping ([PostModel])->Void)
 }

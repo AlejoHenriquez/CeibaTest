@@ -9,10 +9,10 @@ import Foundation
 import Alamofire
 
 class UserListAPIDataSource: IUserListDataSource{
-    let baseUrl = "https://jsonplaceholder.typicode.com" // Esto deberia provenir de un propertyList u otro medio configurable
+    static let baseUrl = "https://jsonplaceholder.typicode.com" // Esto deberia provenir de un propertyList u otro medio configurable
     
     func getUsers(handler: @escaping ([UserModel]) -> Void){
-        let url = "\(baseUrl)/users"
+        let url = "\(UserListAPIDataSource.baseUrl)/users"
         AF.request(url, method: .get,  parameters: nil).response{response in
             print("response", response)
             

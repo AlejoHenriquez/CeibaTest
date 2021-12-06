@@ -14,13 +14,14 @@ class UserListInteractor: IUserListInteractor{
     
     var users = [User]()
     var filteredUsers = [User]()
+    var isFiltering = false
     
     func getUsers() {
         repository.getUsers { [weak self] users in
             guard let _ = self else{
                 return
             }
-            print("users", users)
+            //print("users", users)
             self!.presenter?.didFetchUsers(users: users)
             self!.users = users
         }
@@ -28,13 +29,16 @@ class UserListInteractor: IUserListInteractor{
     
     func filter(_ text: String){
         if text.isEmpty{
+            isFiltering = false
             return
         }
         filteredUsers = users.filter { user in
-            return user.name?.lowercased().contains(text.lowercased()) ?? false
+            return user.name.lowercased().contains(text.lowercased()) ?? false
         }
+        isFiltering = true
         
         presenter?.didFetchUsers(users: filteredUsers)
     }
+    
 }
 

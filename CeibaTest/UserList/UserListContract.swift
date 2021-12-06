@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol IUserListPresenter{
@@ -15,6 +16,7 @@ protocol IUserListPresenter{
     
     func didLoad()
     func filter(_ text: String)
+    func didSelect(user: User, from view: UIViewController)
 }
 
 protocol IUserListView: AnyObject{
@@ -39,5 +41,6 @@ protocol IUserListInteractorOutput: AnyObject{
 
 protocol IUserListRouter{
     static func createUserListModule(userListRef: UserListView)
+    func pushToUserDetail(with user: User, from view: UIViewController)
 }
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UserListPresenter: IUserListPresenter{
     
@@ -20,6 +21,10 @@ class UserListPresenter: IUserListPresenter{
     
     func filter(_ text: String){
         interactor?.filter(text)
+    }
+    
+    func didSelect(user: User, from view: UIViewController){
+        router?.pushToUserDetail(with: user, from: view)
     }
 }
 

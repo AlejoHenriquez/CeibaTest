@@ -8,5 +8,5 @@
 import Foundation
 
 protocol IUserDetailRepo{
-    
+    func getPosts(from userID: Int, completion: @escaping ([Post]) -> Void)
 }

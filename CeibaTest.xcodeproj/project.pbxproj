@@ -29,18 +29,18 @@
 		5DB8CA06275DC7E20048926E /* UserListAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA05275DC7E20048926E /* UserListAPIDataSource.swift */; };
 		5DB8CA09275DCE210048926E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA08275DCE210048926E /* Extension.swift */; };
 		5DB8CA0B275DDBD60048926E /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA0A275DDBD60048926E /* UserListCell.swift */; };
-		5DB8CA1D275DE6AB0048926E /* UserListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA0E275DE6AB0048926E /* UserListContract.swift */; };
-		5DB8CA1E275DE6AB0048926E /* UserListAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA10275DE6AB0048926E /* UserListAPIDataSource.swift */; };
-		5DB8CA1F275DE6AB0048926E /* UserListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA11275DE6AB0048926E /* UserListRepository.swift */; };
-		5DB8CA20275DE6AB0048926E /* IUserListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA12275DE6AB0048926E /* IUserListDataSource.swift */; };
-		5DB8CA21275DE6AB0048926E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA13275DE6AB0048926E /* UserModel.swift */; };
-		5DB8CA22275DE6AB0048926E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA15275DE6AB0048926E /* User.swift */; };
-		5DB8CA23275DE6AB0048926E /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA16275DE6AB0048926E /* UserListInteractor.swift */; };
-		5DB8CA24275DE6AB0048926E /* IUserListRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA17275DE6AB0048926E /* IUserListRepo.swift */; };
-		5DB8CA25275DE6AB0048926E /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA19275DE6AB0048926E /* UserListView.swift */; };
-		5DB8CA26275DE6AB0048926E /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA1A275DE6AB0048926E /* UserListRouter.swift */; };
-		5DB8CA27275DE6AB0048926E /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA1B275DE6AB0048926E /* UserListCell.swift */; };
-		5DB8CA28275DE6AB0048926E /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA1C275DE6AB0048926E /* UserListPresenter.swift */; };
+		5DB8CA37275E4A280048926E /* UserDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA2B275E4A280048926E /* UserDetailContract.swift */; };
+		5DB8CA38275E4A280048926E /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA2D275E4A280048926E /* UserDetailRepository.swift */; };
+		5DB8CA39275E4A280048926E /* IUserDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA2E275E4A280048926E /* IUserDetailDataSource.swift */; };
+		5DB8CA3A275E4A280048926E /* UserDetailAPIDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA2F275E4A280048926E /* UserDetailAPIDataSource.swift */; };
+		5DB8CA3B275E4A280048926E /* IUserDetailRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA31275E4A280048926E /* IUserDetailRepo.swift */; };
+		5DB8CA3C275E4A280048926E /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA32275E4A280048926E /* UserDetailInteractor.swift */; };
+		5DB8CA3D275E4A280048926E /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA34275E4A280048926E /* UserDetailRouter.swift */; };
+		5DB8CA3E275E4A280048926E /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA35275E4A280048926E /* UserDetailView.swift */; };
+		5DB8CA3F275E4A280048926E /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA36275E4A280048926E /* UserDetailPresenter.swift */; };
+		5DB8CA41275E5D020048926E /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA40275E5D020048926E /* PostModel.swift */; };
+		5DB8CA43275E60380048926E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA42275E60380048926E /* Post.swift */; };
+		5DB8CA45275E70090048926E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA44275E70090048926E /* PostCell.swift */; };
 		B1597DB50512CF660F011829 /* Pods_CeibaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */; };
 		E80CEA461D4F1ACD84221AED /* Pods_CeibaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -93,18 +93,18 @@
 		5DB8CA05275DC7E20048926E /* UserListAPIDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAPIDataSource.swift; sourceTree = "<group>"; };
 		5DB8CA08275DCE210048926E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5DB8CA0A275DDBD60048926E /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
-		5DB8CA0E275DE6AB0048926E /* UserListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListContract.swift; sourceTree = "<group>"; };
-		5DB8CA10275DE6AB0048926E /* UserListAPIDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListAPIDataSource.swift; sourceTree = "<group>"; };
-		5DB8CA11275DE6AB0048926E /* UserListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListRepository.swift; sourceTree = "<group>"; };
-		5DB8CA12275DE6AB0048926E /* IUserListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUserListDataSource.swift; sourceTree = "<group>"; };
-		5DB8CA13275DE6AB0048926E /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		5DB8CA15275DE6AB0048926E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		5DB8CA16275DE6AB0048926E /* UserListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
-		5DB8CA17275DE6AB0048926E /* IUserListRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUserListRepo.swift; sourceTree = "<group>"; };
-		5DB8CA19275DE6AB0048926E /* UserListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
-		5DB8CA1A275DE6AB0048926E /* UserListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
-		5DB8CA1B275DE6AB0048926E /* UserListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
-		5DB8CA1C275DE6AB0048926E /* UserListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		5DB8CA2B275E4A280048926E /* UserDetailContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailContract.swift; sourceTree = "<group>"; };
+		5DB8CA2D275E4A280048926E /* UserDetailRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
+		5DB8CA2E275E4A280048926E /* IUserDetailDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUserDetailDataSource.swift; sourceTree = "<group>"; };
+		5DB8CA2F275E4A280048926E /* UserDetailAPIDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailAPIDataSource.swift; sourceTree = "<group>"; };
+		5DB8CA31275E4A280048926E /* IUserDetailRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IUserDetailRepo.swift; sourceTree = "<group>"; };
+		5DB8CA32275E4A280048926E /* UserDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
+		5DB8CA34275E4A280048926E /* UserDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
+		5DB8CA35275E4A280048926E /* UserDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		5DB8CA36275E4A280048926E /* UserDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		5DB8CA40275E5D020048926E /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		5DB8CA42275E60380048926E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5DB8CA44275E70090048926E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09589D160EA97B5B40E2A76 /* Pods_CeibaTest_CeibaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest_CeibaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,11 +187,11 @@
 		5DB8C9B3275D73DC0048926E /* CeibaTest */ = {
 			isa = PBXGroup;
 			children = (
-				5DB8CA0D275DE6AB0048926E /* UserList */,
 				5DB8C9E7275D82B50048926E /* UI */,
 				5DB8C9E6275D82930048926E /* Resources */,
 				5DB8C9E5275D82860048926E /* App */,
 				5DB8C9E4275D827A0048926E /* UserList */,
+				5DB8CA2A275E4A280048926E /* UserDetail */,
 				5DB8CA07275DCC2E0048926E /* Common */,
 				5DB8C9C2275D73DE0048926E /* Info.plist */,
 			);
@@ -292,45 +292,45 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		5DB8CA0D275DE6AB0048926E /* UserList */ = {
+		5DB8CA2A275E4A280048926E /* UserDetail */ = {
 			isa = PBXGroup;
 			children = (
-				5DB8CA0E275DE6AB0048926E /* UserListContract.swift */,
-				5DB8CA0F275DE6AB0048926E /* Data */,
-				5DB8CA14275DE6AB0048926E /* Domain */,
-				5DB8CA18275DE6AB0048926E /* Presentation */,
+				5DB8CA2B275E4A280048926E /* UserDetailContract.swift */,
+				5DB8CA2C275E4A280048926E /* Data */,
+				5DB8CA30275E4A280048926E /* Domain */,
+				5DB8CA33275E4A280048926E /* Presentation */,
 			);
-			path = UserList;
+			path = UserDetail;
 			sourceTree = "<group>";
 		};
-		5DB8CA0F275DE6AB0048926E /* Data */ = {
+		5DB8CA2C275E4A280048926E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				5DB8CA10275DE6AB0048926E /* UserListAPIDataSource.swift */,
-				5DB8CA11275DE6AB0048926E /* UserListRepository.swift */,
-				5DB8CA12275DE6AB0048926E /* IUserListDataSource.swift */,
-				5DB8CA13275DE6AB0048926E /* UserModel.swift */,
+				5DB8CA2D275E4A280048926E /* UserDetailRepository.swift */,
+				5DB8CA2E275E4A280048926E /* IUserDetailDataSource.swift */,
+				5DB8CA2F275E4A280048926E /* UserDetailAPIDataSource.swift */,
+				5DB8CA40275E5D020048926E /* PostModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		5DB8CA14275DE6AB0048926E /* Domain */ = {
+		5DB8CA30275E4A280048926E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				5DB8CA15275DE6AB0048926E /* User.swift */,
-				5DB8CA16275DE6AB0048926E /* UserListInteractor.swift */,
-				5DB8CA17275DE6AB0048926E /* IUserListRepo.swift */,
+				5DB8CA31275E4A280048926E /* IUserDetailRepo.swift */,
+				5DB8CA32275E4A280048926E /* UserDetailInteractor.swift */,
+				5DB8CA42275E60380048926E /* Post.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		5DB8CA18275DE6AB0048926E /* Presentation */ = {
+		5DB8CA33275E4A280048926E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				5DB8CA19275DE6AB0048926E /* UserListView.swift */,
-				5DB8CA1A275DE6AB0048926E /* UserListRouter.swift */,
-				5DB8CA1B275DE6AB0048926E /* UserListCell.swift */,
-				5DB8CA1C275DE6AB0048926E /* UserListPresenter.swift */,
+				5DB8CA34275E4A280048926E /* UserDetailRouter.swift */,
+				5DB8CA35275E4A280048926E /* UserDetailView.swift */,
+				5DB8CA36275E4A280048926E /* UserDetailPresenter.swift */,
+				5DB8CA44275E70090048926E /* PostCell.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -575,32 +575,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB8CA0B275DDBD60048926E /* UserListCell.swift in Sources */,
-				5DB8CA28275DE6AB0048926E /* UserListPresenter.swift in Sources */,
-				5DB8CA23275DE6AB0048926E /* UserListInteractor.swift in Sources */,
+				5DB8CA3B275E4A280048926E /* IUserDetailRepo.swift in Sources */,
+				5DB8CA38275E4A280048926E /* UserDetailRepository.swift in Sources */,
 				5DB8C9FC275DA7460048926E /* IUserListRepo.swift in Sources */,
 				5DB8C9F7275DA3D50048926E /* UserListPresenter.swift in Sources */,
-				5DB8CA27275DE6AB0048926E /* UserListCell.swift in Sources */,
+				5DB8CA45275E70090048926E /* PostCell.swift in Sources */,
+				5DB8CA37275E4A280048926E /* UserDetailContract.swift in Sources */,
+				5DB8CA3F275E4A280048926E /* UserDetailPresenter.swift in Sources */,
 				5DB8C9FA275DA4070048926E /* UserListInteractor.swift in Sources */,
-				5DB8CA1F275DE6AB0048926E /* UserListRepository.swift in Sources */,
 				5DB8C9B9275D73DC0048926E /* UserListView.swift in Sources */,
 				5DB8C9F6275DA3D50048926E /* UserListRouter.swift in Sources */,
+				5DB8CA41275E5D020048926E /* PostModel.swift in Sources */,
+				5DB8CA3C275E4A280048926E /* UserDetailInteractor.swift in Sources */,
 				5DB8CA06275DC7E20048926E /* UserListAPIDataSource.swift in Sources */,
 				5DB8C9FE275DAAC80048926E /* User.swift in Sources */,
-				5DB8CA24275DE6AB0048926E /* IUserListRepo.swift in Sources */,
 				5DB8C9B5275D73DC0048926E /* AppDelegate.swift in Sources */,
-				5DB8CA20275DE6AB0048926E /* IUserListDataSource.swift in Sources */,
 				5DB8CA04275DB5040048926E /* IUserListDataSource.swift in Sources */,
-				5DB8CA1D275DE6AB0048926E /* UserListContract.swift in Sources */,
 				5DB8CA09275DCE210048926E /* Extension.swift in Sources */,
+				5DB8CA43275E60380048926E /* Post.swift in Sources */,
 				5DB8C9B7275D73DC0048926E /* SceneDelegate.swift in Sources */,
 				5DB8CA00275DABC20048926E /* UserListRepository.swift in Sources */,
 				5DB8C9F8275DA3D50048926E /* UserListContract.swift in Sources */,
-				5DB8CA25275DE6AB0048926E /* UserListView.swift in Sources */,
-				5DB8CA1E275DE6AB0048926E /* UserListAPIDataSource.swift in Sources */,
-				5DB8CA21275DE6AB0048926E /* UserModel.swift in Sources */,
+				5DB8CA3D275E4A280048926E /* UserDetailRouter.swift in Sources */,
+				5DB8CA3A275E4A280048926E /* UserDetailAPIDataSource.swift in Sources */,
+				5DB8CA39275E4A280048926E /* IUserDetailDataSource.swift in Sources */,
 				5DB8CA02275DADCB0048926E /* UserModel.swift in Sources */,
-				5DB8CA22275DE6AB0048926E /* User.swift in Sources */,
-				5DB8CA26275DE6AB0048926E /* UserListRouter.swift in Sources */,
+				5DB8CA3E275E4A280048926E /* UserDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
