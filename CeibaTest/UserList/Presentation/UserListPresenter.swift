@@ -14,6 +14,15 @@ class UserListPresenter: IUserListPresenter{
     weak var view: IUserListView?
     
     func didLoad() {
-        
+        interactor!.getUsers()
+        view!.showSpinner()
+    }
+}
+
+
+extension UserListPresenter: IUserListInteractorOutput{
+    func didFetchUsers(users: [User]) {
+        view!.hideSpinner()
+        view!.showUsers(users: users)
     }
 }

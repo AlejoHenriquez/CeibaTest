@@ -17,11 +17,22 @@ protocol IUserListPresenter{
 }
 
 protocol IUserListView: AnyObject{
+    func showSpinner()
+    func hideSpinner()
     
+    func showUsers(users: [User])
+    func showEmptyLabel()
+    func hideEmptyLabel()
 }
 
 protocol IUserListInteractor{
+    var presenter: IUserListInteractorOutput? {get set}
     
+    func getUsers()
+}
+
+protocol IUserListInteractorOutput: AnyObject{
+    func didFetchUsers(users: [User])
 }
 
 protocol IUserListRouter{

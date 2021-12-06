@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,41 +34,41 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XfZ-8D-ytP">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.96070629360000004" green="0.95700293780000001" blue="0.94901913400000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B05-dx-zmY">
-                                    <size key="itemSize" width="414" height="129"/>
+                                    <size key="itemSize" width="258" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="f8v-jy-IdP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCell" id="f8v-jy-IdP" customClass="UserListCell" customModule="CeibaTest" customModuleProvider="target">
+                                        <rect key="frame" x="78" y="0.0" width="258" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LPo-Tl-9og">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="258" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkJ-da-HWU">
-                                                    <rect key="frame" x="8" y="8" width="398" height="24"/>
+                                                    <rect key="frame" x="8" y="8" width="242" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.25857505200000003" green="0.40644693370000001" blue="0.2195737958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📞 Numero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9D-iE-UQc">
-                                                    <rect key="frame" x="8" y="39" width="398" height="18"/>
+                                                    <rect key="frame" x="8" y="39" width="242" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✉️ Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIX-ik-T4d">
-                                                    <rect key="frame" x="8" y="65" width="398" height="18"/>
+                                                    <rect key="frame" x="8" y="65" width="242" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCn-xx-d6x">
-                                                    <rect key="frame" x="227.5" y="91" width="163.5" height="31"/>
+                                                    <rect key="frame" x="71.5" y="91" width="163.5" height="31"/>
                                                     <color key="tintColor" red="0.25857505200000003" green="0.40644693370000001" blue="0.2195737958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="VER PUBLICACIONES"/>
@@ -91,23 +90,38 @@
                                                 <constraint firstItem="qIX-ik-T4d" firstAttribute="leading" secondItem="LPo-Tl-9og" secondAttribute="leading" constant="8" id="xtU-C0-ci7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="414" height="130"/>
+                                        <color key="backgroundColor" red="0.99605661629999998" green="0.99214702840000002" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="customSize" width="258" height="130"/>
+                                        <connections>
+                                            <outlet property="email" destination="qIX-ik-T4d" id="7am-41-hDX"/>
+                                            <outlet property="name" destination="jkJ-da-HWU" id="7HH-cc-hQt"/>
+                                            <outlet property="phone" destination="j9D-iE-UQc" id="Nfm-Qv-1Ab"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se encontraron resultados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYX-O0-QIR">
+                                <rect key="frame" x="94.5" y="464.5" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96070629360000004" green="0.95700293780000001" blue="0.94901913400000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="XfZ-8D-ytP" secondAttribute="top" id="8WG-O0-AMA"/>
                             <constraint firstItem="XfZ-8D-ytP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GYY-cz-3XQ"/>
                             <constraint firstItem="XfZ-8D-ytP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="awK-5D-2CH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfZ-8D-ytP" secondAttribute="trailing" id="gra-Nj-zfn"/>
+                            <constraint firstItem="WYX-O0-QIR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lsg-Xg-xR4"/>
+                            <constraint firstItem="WYX-O0-QIR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sEj-ct-Gq1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dzw-Wr-uBh"/>
                     <connections>
                         <outlet property="collectionView" destination="XfZ-8D-ytP" id="DDx-a0-MMz"/>
+                        <outlet property="emptyLabel" destination="WYX-O0-QIR" id="bOg-6r-WDm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,9 +129,4 @@
             <point key="canvasLocation" x="-39.130434782608695" y="61.607142857142854"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

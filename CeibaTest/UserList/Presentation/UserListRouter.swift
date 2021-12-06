@@ -11,10 +11,11 @@ class UserListRouter: IUserListRouter{
     
     
     class func createUserListModule(userListRef: UserListView){
-        let presenter: IUserListPresenter = UserListPresenter()
+        let presenter: IUserListPresenter & IUserListInteractorOutput = UserListPresenter()
         
         userListRef.presenter = presenter
         userListRef.presenter?.interactor = UserListInteractor()
+        userListRef.presenter?.interactor?.presenter = presenter
         userListRef.presenter?.router = UserListRouter()
         userListRef.presenter?.view = userListRef
     }
