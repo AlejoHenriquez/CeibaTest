@@ -28,5 +28,10 @@ extension UserListPresenter: IUserListInteractorOutput{
     func didFetchUsers(users: [User]) {
         view!.hideSpinner()
         view!.showUsers(users: users)
+        if users.count == 0{
+            view!.showEmptyLabel()
+        }else{
+            view!.hideEmptyLabel()
+        }
     }
 }
