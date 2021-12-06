@@ -17,6 +17,10 @@ class UserListPresenter: IUserListPresenter{
         interactor!.getUsers()
         view!.showSpinner()
     }
+    
+    func filter(_ text: String){
+        interactor?.filter(text)
+    }
 }
 
 

@@ -10,6 +10,8 @@ import UIKit
 class UserListView: UIViewController  {
     
     var presenter : IUserListPresenter?
+    var collectionLayout = UICollectionViewFlowLayout()
+    let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var emptyLabel: UILabel!
@@ -17,12 +19,17 @@ class UserListView: UIViewController  {
     
     
     var users = [User]()
-    var collectionLayout = UICollectionViewFlowLayout()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Buscar Usuarios"
+        navigationItem.searchController = searchController
         
         collectionView.collectionViewLayout = collectionLayout
         UserListRouter.createUserListModule(userListRef: self)
@@ -73,5 +80,11 @@ extension UserListView: UICollectionViewDelegate, UICollectionViewDataSource, UI
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width - 20, height: 130)
+    }
+}
+
+extension UserListView: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        presenter?.filter(searchController.searchBar.text!)
     }
 }

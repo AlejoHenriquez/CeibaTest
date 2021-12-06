@@ -14,6 +14,7 @@ protocol IUserListPresenter{
     var router: IUserListRouter? {get set}
     
     func didLoad()
+    func filter(_ text: String)
 }
 
 protocol IUserListView: AnyObject{
@@ -29,6 +30,7 @@ protocol IUserListInteractor{
     var presenter: IUserListInteractorOutput? {get set}
     
     func getUsers()
+    func filter(_ text: String)
 }
 
 protocol IUserListInteractorOutput: AnyObject{
