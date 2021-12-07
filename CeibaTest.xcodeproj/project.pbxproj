@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E6F89434DD5753E0F1D23D2 /* Pods_CeibaTest_CeibaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09589D160EA97B5B40E2A76 /* Pods_CeibaTest_CeibaTestUITests.framework */; };
+		5D7A9F02275EF7AF00CFF6EA /* UserListLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A9F01275EF7AF00CFF6EA /* UserListLocalDataSource.swift */; };
+		5D7A9F18275F01FD00CFF6EA /* UserCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A9F16275F01FD00CFF6EA /* UserCoreData+CoreDataClass.swift */; };
+		5D7A9F19275F01FD00CFF6EA /* UserCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A9F17275F01FD00CFF6EA /* UserCoreData+CoreDataProperties.swift */; };
 		5DB8C9B5275D73DC0048926E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8C9B4275D73DC0048926E /* AppDelegate.swift */; };
 		5DB8C9B7275D73DC0048926E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8C9B6275D73DC0048926E /* SceneDelegate.swift */; };
 		5DB8C9B9275D73DC0048926E /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8C9B8275D73DC0048926E /* UserListView.swift */; };
@@ -41,6 +44,8 @@
 		5DB8CA41275E5D020048926E /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA40275E5D020048926E /* PostModel.swift */; };
 		5DB8CA43275E60380048926E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA42275E60380048926E /* Post.swift */; };
 		5DB8CA45275E70090048926E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA44275E70090048926E /* PostCell.swift */; };
+		5DCB045C275F082A004C5C42 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB045B275F082A004C5C42 /* Common.swift */; };
+		5DCB045D275F10FC004C5C42 /* CeibaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A9F13275F01A800CFF6EA /* CeibaTest.xcdatamodeld */; };
 		B1597DB50512CF660F011829 /* Pods_CeibaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */; };
 		E80CEA461D4F1ACD84221AED /* Pods_CeibaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +73,10 @@
 		21773FA619C3D693002B904E /* Pods-CeibaTest-CeibaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaTest-CeibaTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaTest-CeibaTestUITests/Pods-CeibaTest-CeibaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31389033A32183A7C150C17C /* Pods-CeibaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaTest.debug.xcconfig"; path = "Target Support Files/Pods-CeibaTest/Pods-CeibaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4094FDE32DCE62EAE60C127C /* Pods-CeibaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaTestTests.release.xcconfig"; path = "Target Support Files/Pods-CeibaTestTests/Pods-CeibaTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D7A9F01275EF7AF00CFF6EA /* UserListLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListLocalDataSource.swift; sourceTree = "<group>"; };
+		5D7A9F14275F01A800CFF6EA /* CeibaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CeibaTest.xcdatamodel; sourceTree = "<group>"; };
+		5D7A9F16275F01FD00CFF6EA /* UserCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5D7A9F17275F01FD00CFF6EA /* UserCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5DB8C9B1275D73DC0048926E /* CeibaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB8C9B4275D73DC0048926E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DB8C9B6275D73DC0048926E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +114,7 @@
 		5DB8CA40275E5D020048926E /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		5DB8CA42275E60380048926E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5DB8CA44275E70090048926E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5DCB045B275F082A004C5C42 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09589D160EA97B5B40E2A76 /* Pods_CeibaTest_CeibaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest_CeibaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +172,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5D7A9F07275EFA7E00CFF6EA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5D7A9F16275F01FD00CFF6EA /* UserCoreData+CoreDataClass.swift */,
+				5D7A9F17275F01FD00CFF6EA /* UserCoreData+CoreDataProperties.swift */,
+				5DB8CA01275DADCB0048926E /* UserModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		5DB8C9A8275D73DC0048926E = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +214,7 @@
 				5DB8CA2A275E4A280048926E /* UserDetail */,
 				5DB8CA07275DCC2E0048926E /* Common */,
 				5DB8C9C2275D73DE0048926E /* Info.plist */,
+				5D7A9F13275F01A800CFF6EA /* CeibaTest.xcdatamodeld */,
 			);
 			path = CeibaTest;
 			sourceTree = "<group>";
@@ -276,10 +297,11 @@
 		5DB8C9EA275D83870048926E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				5D7A9F07275EFA7E00CFF6EA /* Entities */,
 				5DB8C9FF275DABC20048926E /* UserListRepository.swift */,
-				5DB8CA01275DADCB0048926E /* UserModel.swift */,
 				5DB8CA03275DB5040048926E /* IUserListDataSource.swift */,
 				5DB8CA05275DC7E20048926E /* UserListAPIDataSource.swift */,
+				5D7A9F01275EF7AF00CFF6EA /* UserListLocalDataSource.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -288,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				5DB8CA08275DCE210048926E /* Extension.swift */,
+				5DCB045B275F082A004C5C42 /* Common.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -574,7 +597,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCB045C275F082A004C5C42 /* Common.swift in Sources */,
 				5DB8CA0B275DDBD60048926E /* UserListCell.swift in Sources */,
+				5DCB045D275F10FC004C5C42 /* CeibaTest.xcdatamodeld in Sources */,
 				5DB8CA3B275E4A280048926E /* IUserDetailRepo.swift in Sources */,
 				5DB8CA38275E4A280048926E /* UserDetailRepository.swift in Sources */,
 				5DB8C9FC275DA7460048926E /* IUserListRepo.swift in Sources */,
@@ -582,6 +607,8 @@
 				5DB8CA45275E70090048926E /* PostCell.swift in Sources */,
 				5DB8CA37275E4A280048926E /* UserDetailContract.swift in Sources */,
 				5DB8CA3F275E4A280048926E /* UserDetailPresenter.swift in Sources */,
+				5D7A9F19275F01FD00CFF6EA /* UserCoreData+CoreDataProperties.swift in Sources */,
+				5D7A9F02275EF7AF00CFF6EA /* UserListLocalDataSource.swift in Sources */,
 				5DB8C9FA275DA4070048926E /* UserListInteractor.swift in Sources */,
 				5DB8C9B9275D73DC0048926E /* UserListView.swift in Sources */,
 				5DB8C9F6275DA3D50048926E /* UserListRouter.swift in Sources */,
@@ -600,6 +627,7 @@
 				5DB8CA3A275E4A280048926E /* UserDetailAPIDataSource.swift in Sources */,
 				5DB8CA39275E4A280048926E /* IUserDetailDataSource.swift in Sources */,
 				5DB8CA02275DADCB0048926E /* UserModel.swift in Sources */,
+				5D7A9F18275F01FD00CFF6EA /* UserCoreData+CoreDataClass.swift in Sources */,
 				5DB8CA3E275E4A280048926E /* UserDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -964,6 +992,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D7A9F13275F01A800CFF6EA /* CeibaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D7A9F14275F01A800CFF6EA /* CeibaTest.xcdatamodel */,
+			);
+			currentVersion = 5D7A9F14275F01A800CFF6EA /* CeibaTest.xcdatamodel */;
+			path = CeibaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5DB8C9A9275D73DC0048926E /* Project object */;
 }

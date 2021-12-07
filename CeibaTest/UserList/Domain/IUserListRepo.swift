@@ -8,5 +8,6 @@
 import Foundation
 
 protocol IUserListRepo{
-    func getUsers(handler: @escaping ([User]) -> ())
+    func getUsers(from sourceData: SourceData, handler: @escaping ([User]) -> ())
+    func saveLocalUsers(users: [User])
 }

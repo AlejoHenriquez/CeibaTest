@@ -15,8 +15,8 @@ class UserListPresenter: IUserListPresenter{
     weak var view: IUserListView?
     
     func didLoad() {
-        interactor!.getUsers()
         view!.showSpinner()
+        interactor!.getUsers()
     }
     
     func filter(_ text: String){

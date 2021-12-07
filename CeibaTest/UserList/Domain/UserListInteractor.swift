@@ -17,14 +17,36 @@ class UserListInteractor: IUserListInteractor{
     var isFiltering = false
     
     func getUsers() {
-        repository.getUsers { [weak self] users in
+        print(#function)
+        repository.getUsers(from: .Local) { [weak self] users in
             guard let _ = self else{
                 return
             }
-            //print("users", users)
-            self!.presenter?.didFetchUsers(users: users)
-            self!.users = users
+            if users.count > 0 {
+                self!.didFetchUsers(users: users)
+            }else{
+                self!.getUsersAPI()
+            }
         }
+    }
+    
+    private func getUsersAPI(){
+        print(#function)
+        repository.getUsers(from: .API) { [weak self] users in
+            guard let _ = self else{
+                return
+            }
+            if users.count > 0 {
+                self!.repository.saveLocalUsers(users: users)
+            }
+            
+            self!.didFetchUsers(users: users)
+        }
+    }
+    
+    private func didFetchUsers(users: [User]){
+        presenter?.didFetchUsers(users: users)
+        self.users = users
     }
     
     func filter(_ text: String){

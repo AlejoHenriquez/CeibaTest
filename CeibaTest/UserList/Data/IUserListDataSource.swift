@@ -10,3 +10,7 @@ import Foundation
 protocol IUserListDataSource{
     func getUsers(handler: @escaping ([UserModel]) -> Void)
 }
+
+protocol IUserListLocalDataSource: IUserListDataSource{
+    func saveUsers(users: [User])
+}
