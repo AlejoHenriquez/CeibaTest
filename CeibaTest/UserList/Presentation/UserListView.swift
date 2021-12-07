@@ -30,6 +30,7 @@ class UserListView: UIViewController  {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Buscar Usuarios"
+        searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         
         UserListRouter.createUserListModule(userListRef: self)
@@ -87,8 +88,14 @@ extension UserListView: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
 }
 
-extension UserListView: UISearchResultsUpdating{
+extension UserListView: UISearchResultsUpdating, UISearchBarDelegate{
     func updateSearchResults(for searchController: UISearchController) {
         presenter?.filter(searchController.searchBar.text!)
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print(#function)
+        presenter?.filter(searchController.searchBar.text!)
+    }
+    
 }

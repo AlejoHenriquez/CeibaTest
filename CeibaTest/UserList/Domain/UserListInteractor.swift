@@ -52,10 +52,11 @@ class UserListInteractor: IUserListInteractor{
     func filter(_ text: String){
         if text.isEmpty{
             isFiltering = false
+            presenter?.didFetchUsers(users: users)
             return
         }
         filteredUsers = users.filter { user in
-            return user.name.lowercased().contains(text.lowercased()) ?? false
+            return user.name.lowercased().contains(text.lowercased())
         }
         isFiltering = true
         

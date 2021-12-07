@@ -21,8 +21,6 @@ class UserListLocalDataSource: IUserListLocalDataSource{
                 var users = [UserModel]()
                 
                 for userCoreData in usersCoreData {
-                    print(userCoreData)
-                    print(userCoreData.email)
                     let user = UserModel(email: userCoreData.email!, id: Int(userCoreData.id), name: userCoreData.name!, phone: userCoreData.phone!, username: userCoreData.username!, website: userCoreData.website!)
                     users.append(user)
                 }
