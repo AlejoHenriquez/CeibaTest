@@ -10,7 +10,7 @@ import Alamofire
 
 class UserDetailAPIDataSource: IUserDetailDataSource{
     func getPosts(withUserID id: Int, completion: @escaping ([PostModel])->Void){
-        let url = "\(UserListAPIDataSource.baseUrl)/posts?userId=\(id)"
+        let url = "\(Environment.baseUrl)/posts?userId=\(id)"
         AF.request(url, method: .get,  parameters: nil).response{response in
             print("response", response)
             

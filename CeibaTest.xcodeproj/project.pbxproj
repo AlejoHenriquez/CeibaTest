@@ -46,6 +46,7 @@
 		5DB8CA45275E70090048926E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8CA44275E70090048926E /* PostCell.swift */; };
 		5DCB045C275F082A004C5C42 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB045B275F082A004C5C42 /* Common.swift */; };
 		5DCB045D275F10FC004C5C42 /* CeibaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A9F13275F01A800CFF6EA /* CeibaTest.xcdatamodeld */; };
+		5DCB045F275F1B24004C5C42 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB045E275F1B24004C5C42 /* Environment.swift */; };
 		B1597DB50512CF660F011829 /* Pods_CeibaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */; };
 		E80CEA461D4F1ACD84221AED /* Pods_CeibaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		5DB8CA42275E60380048926E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5DB8CA44275E70090048926E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		5DCB045B275F082A004C5C42 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5DCB045E275F1B24004C5C42 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		8690C62E3CF74E6B3C87071B /* Pods_CeibaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523ED13DAC445188B4BA215 /* Pods_CeibaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09589D160EA97B5B40E2A76 /* Pods_CeibaTest_CeibaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaTest_CeibaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +313,7 @@
 			children = (
 				5DB8CA08275DCE210048926E /* Extension.swift */,
 				5DCB045B275F082A004C5C42 /* Common.swift */,
+				5DCB045E275F1B24004C5C42 /* Environment.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				5DB8CA38275E4A280048926E /* UserDetailRepository.swift in Sources */,
 				5DB8C9FC275DA7460048926E /* IUserListRepo.swift in Sources */,
 				5DB8C9F7275DA3D50048926E /* UserListPresenter.swift in Sources */,
+				5DCB045F275F1B24004C5C42 /* Environment.swift in Sources */,
 				5DB8CA45275E70090048926E /* PostCell.swift in Sources */,
 				5DB8CA37275E4A280048926E /* UserDetailContract.swift in Sources */,
 				5DB8CA3F275E4A280048926E /* UserDetailPresenter.swift in Sources */,
